@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cloud-resume", "cloud-resume", "{9CFBAF85-B05C-47CB-98B6-D9F8F07C3F03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{CD669208-F950-438D-B73D-FF4D77D52918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "cloud-resume\backend\Api\api.csproj", "{C769D402-6CAC-4D4E-ABCB-F9654AC09010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C769D402-6CAC-4D4E-ABCB-F9654AC09010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C769D402-6CAC-4D4E-ABCB-F9654AC09010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C769D402-6CAC-4D4E-ABCB-F9654AC09010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C769D402-6CAC-4D4E-ABCB-F9654AC09010}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD669208-F950-438D-B73D-FF4D77D52918} = {9CFBAF85-B05C-47CB-98B6-D9F8F07C3F03}
+		{C769D402-6CAC-4D4E-ABCB-F9654AC09010} = {CD669208-F950-438D-B73D-FF4D77D52918}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F3BD03E-141C-43EB-9E9C-4F4DD2292FA7}
+	EndGlobalSection
+EndGlobal

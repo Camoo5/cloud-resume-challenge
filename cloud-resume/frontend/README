@@ -1,0 +1,59 @@
+This project is The Cloud Resume Challenge Azure, it is about building my own resume integrated into GitHub and hosted on Microsoft Azure with Blob Storage, Azure Functions and CosmosDB. I created my own webpage with HTML and CSS, developing a CI/CD workflow with GitHub, and finally, deploying a static web app with a serverless database. 
+
+Focus Area: Cloud Storage, CDN and CICD
+
+Steps for creating Cloud Resume Challenge.
+
+1.Certification - My resume needs to have the AZ-900 certification on it. This is an introductory certification that orients you on the Azure cloud. I obtained my certification on May 22 2024, here is the link to my certification <https://learn.microsoft.com/en-us/users/oluwoleokanlawon-7688/credentials/8e59390eec7e1091>
+
+2.HTML & CSS
+My resume needs to be written in HTML and styled with CSS. I learnt the skills by watching a couple of YouTube videos and using w3schools.com to learn the basis before designing my Resume and then putting it together.
+
+3.Static Website
+My HTML resume will be deployed online as an Azure Storage static website using Azure Storage
+
+4.HTTPS
+The Azure Storage website URL should use HTTPS for security. You will need to use Azure CDN to help with this.
+
+5.DNS
+Point a custom DNS domain name to the Azure CDN endpoint, so your resume can be accessed at something like my-c00l-resume-website.com. I used Azure DNS for this project.
+
+6.Javascript
+Your resume webpage should include a visitor counter that displays how many people have accessed the site. 
+
+7.Database
+The visitor counter will need to retrieve and update its count in a database somewhere. I used API of Azure’s CosmosDB for this.
+
+8.API
+I created an API that accepts requests from my web app and communicates with the database. I used Azure Functions with an HTTP trigger for this. 
+
+9.Python - continue from here
+You will need to write a bit of code in the Azure Function; you could use more Javascript, but it would be better for our purposes to explore Python – a common language used in back-end programs and scripts – and its Azure SDK. Here is a good, free Python tutorial.
+
+10.Tests
+You should also include some tests for your Python code. Here are some resources on writing good Python tests.
+
+11.Infrastructure as Code
+You should not be configuring your API resources – the Azure Function, the CosmosDB – manually, by clicking around in the Azure console. Instead, define them in an Azure Resource Manager (ARM) template on a Consumption plan. This is called “infrastructure as code” or IaC. It saves you time in the long run.
+
+12.Source Control
+You do not want to be updating either your back-end API or your front-end website by making calls from your laptop, though. You want them to update automatically whenever you make a change to the code. (This is called continuous integration and deployment, or CI/CD.) Create a GitHub repository for your backend code.
+
+13.CI/CD (Back end)
+Set up GitHub Actions such that when you push an update to your ARM template or Python code, your Python tests get run. If the tests pass, the ARM application should get packaged and deployed to Azure.
+
+14.CI/CD (Front end)
+Create a second GitHub repository for your website code. Create GitHub Actions such that when you push new website code, the Azure Storage blob automatically gets updated. (You may need to purge your Azure CDN endpoint in the code as well.) Important note: DO NOT commit Azure credentials to source control! Bad hats will find them and use them against you!
+
+Section 1: 
+
+Section 2: Building the backend
+
+Setting up our Cosmos DB resource - We will create our Cosmos DB account, database and container and data
+
+Setting up our Azure Function - We will create our Azure Function to interact with our Cosmos DB counter data.
+
+Test locally - We will test our function locally an make sure we can view our counter data in the browser and in our website locally.
+
+
+https://github.com/madebygps/azure-resume/blob/1c63d9edcc599926b19dc3911ff9d835e9522972/README.md#L4
