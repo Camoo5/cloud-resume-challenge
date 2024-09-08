@@ -1,317 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>GPS's Azure Resume</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+   <script src="main.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
 </head>
+
 <body>
-    <main class="main-content">
-    <section class="left-section">
-       <class="left-content" >
-      <div class="profile">
-        <div class="image">
-        <img src="/wole1.jpg" alt="">
-        </div>
-      <h2 class="name">Oluwole Okanlawon</h2>
 
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
-      <p class="career"> Concessionary Travel Case officer</p>
-      
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
       <div class="row banner">
-      <div class="banner-text"> 
-          <h1 class="responsive-headline">Hi, I 'm Oluwole</h1>
-
-          <p>This page has been viewed <a id="Counter"></a> times :) </p>
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hi, I'm Oluwole</h1>
+            
+            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
+            <ul class="social">
+               <li><a href=" oluwoleokanlawon91@gmail.com"><i class="fa fa-external-link"></i></a></li>
+               <li><a href=" https://www.linkedin.com/in/oluwoleokanlawon"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/Camoo5/cloud-resume-challenge"><i class="fa fa-github"></i></a></li>
+            </ul>
+         </div>
       </div>
 
-      <div class="contact-info">
-        <h3 class="main-title">Contact Info</h3>
-      <ul>
-        <li>
-         <i class="fa fa-phone"></i>
-         07878259162
-      </li>
-      <li>
-         <i class="fa fa-fax"></i>
-         oluwoleokanlawon91@gmail.com
-      </li>
-      <li>
-        <i class="fa fa-linkedin"></i>
-        https://www.linkedin.com/in/oluwoleokanlawon
-     </li>
-     <li>
-        <i class="fa fa-github"></i>
-        https://github.com/Camoo5/CloudResume
-     </li>
-     <li>
-        <i class="fa fa-facebook"></i>
-        https://www.facebook.com/oluwole.okanlawon
-     </li>
-     <li>
-        <i class="fa fa-map-marker"></i>
-        England, Bedfordshire
-     </li>
-</ul>
-</div>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
 
 
-<div class="skills-section">
-    <h3 class="main-title">Skills</h3>
-    <ul>
-        <li>
-            <p class="skill-title">Javascript</p>
-          
-        </li>
-        <li>
-            <p class="skill-title">c, c++</p>
-        </li>
-        <li>
-            <p class="skill-title">Python</p>
-        </li>
-        <li>
-            <p class="skill-title">Java</p>
-           
-        </li>
-        <li>
-            <p class="skill-title">html</p>
-           
-        </li>
-        <li>
-            <p class="skill-title">css</p>
-           
-        </li>
-        <li>
-            <p class="skill-title">sql</p>
-           
-        </li>
-        <li>
-            <p class="skill-title">jquery</p>
-           
-        </li>
-        <li>
-            <p class="skill-title">.net</p>
-           
-        </li>
-        
-        
-    </ul>
-    <ul>
-        
-    </ul>
-</div>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-<div class="certification-section">
-    <h3 class="main-title">Certifications</h3>
-    <ul>
-        <li>
-            <p class="certification-title">CompTIA A+ Core 1 &amp; 2 Certifications</p>
-          
-        </li>
-        <li>
-            <p class="certification-title">CompTIA A+ Core 2 Practice Lab</p>
-        </li>
-        <li>
-            <p class="certification-title">CompTIA Cloud+ Practice Lab</p>
-          
-        </li>
-        <li>
-            <p class="certification-title">Microsoft Certified: Azure Fundamentals </p>
-           
-        </li>
-      
-        
-        
-    </ul>
-    <ul>
-        
-    </ul>
-</div>
-</section>
-    </section>
-    <section class="right-section">
-        <section class="right-main-content">
-            <section class="about sect">  
-  <h2 class="right-title">About Me</h2>
-   <p class="para">
-    I am a hardworking, motivated, and ambitious individual with outstanding customer service skills. I am passionate to begin a
-    career in IT and so undertook a study programme to prepare me for the IT sector, with exposure to Cloud Computing.<br> <br> I recently graduated from a Cloud Engineer Programme specialising in troubleshooting hardware and software issues through a series of
-      courses, practical work, and official certifications. I built this page as part of the <b>Cloud Azure Resume Challenge</b>.
-   </p>
-</section>
+      <div class="row">
 
-<div>
+         <div class="three columns">
 
-   <section class="experience sect">
-    <h2 class="right-title">Experience</h2>
-    <div class="timeline">
-        <div class="left-tl-content">
-         <h5 class="tl-title">IT Certify</h5>
-         <p class="para">June 2023 - June 2024</p>
-        </div>
-       <div class="right-tl-content">
-            <div class="tl-content">
-                <h5 class="tl-title-2">Cloud Engineer Programme</h5>
-                <p class="para">
-                <ul class="ul">  
-                The Cloud Engineer Programme focused on preparing me for the IT Support sector
-                with exposure to Cloud Computing through a series of intense courses and practical
-                application. Courses studied included: CompTIA IT Fundamentals, CompTIA A+, CompTIA Network+, CompTIA Cloud+, ITIL
-                Foundation, MCSA Microsoft Windows 10, CompTIA Linux+, Cloud Computing
-                Security Knowledge, Microsoft Azure and Amazon Web Services.
-                </p>
-                <ul>
-                    <li>Installing, Configuring &amp; migrating Windows 10 Operating Systems</li>
-                    <li>Configuring Security systems &amp; Windows firewall</li>
-                    <li>Troubleshooting common system and cloud problems</li>
-                    <li>Configuring and managing printers, configuring mobile devices</li>
-                    <li>Configure, manage, and maintain essential network devices</li>
-                    <li>Design and implementing a functional network</li>
-                    <li>Active Directory – unlocking user accounts, resetting passwords, searching users</li>
-                    <li>Implement network security, standards, and protocols</li>
-                    </ul>
-                 
-                    <h5 class="tl-title-2">System Experience</h5>
-                    <p class="para">   
-                        Windows desktop systems, install, patching, troubleshooting, hardware replacement
-                        Extensive experience with the Microsoft Office suite.Thorough understanding of computer, networking and security concepts
-                        Working knowledge of Windows 10, Active Directory, PowerShell, Remote
-                        Access/Desktop and VMware. Knowledge of many programming languages including C, C++, Python, Java, HTML,
-                        CSS, JavaScript, SQL, jQuery, and . NET.
-                    </p>
-                </div>
-            </div>
-       </div>
-                        
-       <div class="timeline">
-        <div class="left-tl-content">
-         <h5 class="tl-title">Camden Council, London</h5>
-         <p class="para">July 2007- present</p>
-        </div>
-       <div class="right-tl-content">
-            <div class="tl-content">
-                <h5 class="tl-title-2">Concessionary Travelcase officer</h5>
-                <ul class="ul">
-                <ul>
-                    <li>Comprehensive understanding of travel and transport concessions and associated
-                        statutory and local eligibility criteria associated with each scheme.</li>
-                    <li>Monitor, review and report on the outcomes of assessments against local and
-                        national policy and legislation.</li>
-                    <li>To deliver a sensitive, customer focused advice and support to service in relation to
-                        accessible transport and independent travel.</li>
-                    <li>To utilise a range of information and communication technologies to process
-                        confidential and medically sensitive customer information.</li>
-                    <li>Prioritise conflicting demands to meet the requirements of the service and to
-                        adhere to performance targets and Council standards.</li>
-                    <li>Team work and providing support and cover for staff absence and training.</li>
-                
-                    </ul> 
-                
-        </div>
-       </div>
-    </div>
-    <div class="timeline">
-        <div class="left-tl-content">
-         <h5 class="tl-title">Westminister City Council, London</h5>
-         <p class="para">September 2006- June 2007</p>
-        </div>
-       <div class="right-tl-content">
-            <div class="tl-content">
-                <h5 class="tl-title-2">Housing officer</h5>
-                <ul class="ul">
-                <ul>
-                    <li>Setting rents, administering their collection and developing policies to deal with
-                        and minimize arrears.</li>
-                    <li>Processing applications for housing improvements and repairs and communicating
-                        outcomes to tenants.</li>
-                    <li>Dealing with breaches of tenancy and leasehold agreements which could culminate
-                        in carrying out evictions.</li>
-                    </ul> 
-        </div>
-       </div>
-    </div>
-   
-    <div class="timeline">
-        <div class="left-tl-content">
-         <h5 class="tl-title">St Giles Hotel, London</h5>
-         <p class="para">October 2003- August 2006</p>
-        </div>
-       <div class="right-tl-content">
-            <div class="tl-content">
-                <h5 class="tl-title-2">Night Auditor</h5>
-                <ul class="ul">
-                <ul>
-                    <li>Verify and balance entries and keep records of financial transactions reported by
-                        various hotel departments during the day.</li>
-                    <li>Check the accuracy of figures, calculations, and postings pertaining to business
-                        transactions recorded by other workers.</li>
-                    <li>Manage check-in, check-out, reservations, responding to guest complaints,
-                        coordinating housekeeping requests, and handling any emergencies that may arise.</li>
-                    </ul> 
-        </div>
-       </div>
-    </div>
-</section>
-<section class="education sect"></section>
-<h2 class="right-title">education</h2>
-<div class="timeline">
-    <div class="left-tl-content">
-     <h5 class="tl-title">IT Certify, London</h5>
-     <p class="para"> 2023- 2024</p>
-    </div>
-   <div class="right-tl-content">
-        <div class="tl-content">
-            <h5 class="tl-title-2">Cloud Engineer Programme</h5> 
-            <ul class="ul">
-            I have recently passed my CompTIA A+ qualifications, <Strong>CompTIA A+ 220-1101 and 1102 Certification</Strong>. 
-            Specialising in troubleshooting hardware and software issues.<a href="https://certification.comptia.org">Visit CompTIA certification</a>
+            <img class="profile-pic"  src="images/me.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>ABOUT ME</h2>
+
+            <p> I am a hardworking, motivated, and ambitious individual with outstanding customer service skills. I am passionate to begin a
+               career in IT and so undertook a study programme to prepare me for the IT sector, with exposure to Cloud Computing.<br> <br> I recently graduated from a Cloud Engineer Programme specialising in troubleshooting hardware and software issues through a series of
+                 courses, practical work, and official certifications.  
+               
+         </br>
+      </br>
+       I built this page as part of the <span><a href="https://github.com/Camoo5/cloud-resume-challenge">Azure Resume Challenge.</a></span>
             
-            <p>I also passed Microsoft Azure Fundamentals. <a href="https://learn.microsoft.com/en-us/users/oluwoleokanlawon-7688/credentials/8e59390eec7e1091">Visit Microsoft certification</a></p>
        
             
+         </div> <!-- end .main-col -->
 
-    </div>
-   </div>
-</div>
-<div class="timeline">
-    <div class="left-tl-content">
-     <h5 class="tl-title">Camden Council, UK</h5>
-     <p class="para"> 2023</p>
-    </div>
-   <div class="right-tl-content">
-        <div class="tl-content">
-            <h5 class="tl-title-2">Mandatory Learning</h5> 
-            <ul class="ul">
-            <ul>
-                <li>Customers Confidentiality.</li>
-                <li>Complaint Handling and Techniques.</li>
-                <li>Information Handling.</li>
-                </ul> 
-    
-        </div>
-   </div>
-</div>
-<div class="timeline">
-    <div class="left-tl-content">
-     <h5 class="tl-title">Essex University, Colchester</h5>
-     <p class="para"> 2014</p>
-    </div>
-   <div class="right-tl-content">
-        <div class="tl-content">
-            <h5 class="tl-title-2">BA(Hons)Business & Management</h5>
-            <p class="para">
-                In my degree programme I explored how businesses are created and grow. Understand organisational behaviour, management structures, supply chains, accounting and finance 
-                and how to manage innovation and new technologies within a business. 
-    </div>
-   </div>
-</div>
-</div>
-</section>
-</main>
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Certifications</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Azure Fundamentals AZ900</h3>
+                  <p class="Visit Microsoft certification"><em class="date">May 2024</em></p>
+                  <a href="https://learn.microsoft.com/en-us/users/oluwoleokanlawon-7688/credentials/8e59390eec7e1091">Visit Microsoft certification</a></p>
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>CompTIA A+ Core 1 & 2</h3>
+                  <p class="I have recently passed my CompTIA A+ qualifications, CompTIA A+ 220-1101 and 1102 Certification. Specialising in troubleshooting hardware and software issues.Visit CompTIA certification"><em class="date">March 2024</em>
+                  </p></em></p><a href="https://certification.comptia.org">Visit CompTIA certification</a>
+
+                  </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+<p></p>
+                  <h3>Cloud Engineer Programme, IT Certify</h3>
+                  <p class="info"><em class="date">July 2024</em></p>
+                  <p class="para">  
+                     The Cloud Engineer Programme focused on preparing me for the IT Support sector
+                     with exposure to Cloud Computing through a series of intense courses and practical
+                     application. Courses studied included: CompTIA IT Fundamentals, CompTIA A+, CompTIA Network+, CompTIA Cloud+, ITIL
+                     Foundation, MCSA Microsoft Windows 10, CompTIA Linux+, Cloud Computing
+                     Security Knowledge, Microsoft Azure and Amazon Web Services.
+                     </p>
+                     <ul>
+                         <li>Installing, Configuring &amp; migrating Windows 10 Operating Systems</li>
+                         <li>Configuring Security systems &amp; Windows firewall</li>
+                         <li>Troubleshooting common system and cloud problems</li>
+                         <li>Configuring and managing printers, configuring mobile devices</li>
+                         <li>Configure, manage, and maintain essential network devices</li>
+                         <li>Design and implementing a functional network</li>
+                         <li>Active Directory – unlocking user accounts, resetting passwords, searching users</li>
+                         <li>Implement network security, standards, and protocols</li>
+                         </ul>
+                         <h5></h5> System Experience</h5>
+                         <p class="para">   
+                             Windows desktop systems, install, patching, troubleshooting, hardware replacement
+                             Extensive experience with the Microsoft Office suite.Thorough understanding of computer, networking and security concepts
+                             Working knowledge of Windows 10, Active Directory, PowerShell, Remote
+                             Access/Desktop and VMware. Knowledge of many programming languages including C, C++, Python, Java, HTML,
+                             CSS, JavaScript, SQL, jQuery, and . NET.
+                         </p>
+
+
+               </div>
+
+               <div class="twelve columns">
+
+                  <h3>Essex University, Colchester</h3>
+                  <p class="info"><em class="date">July 2014</em></p>
+                  <p class="para">   
+                     BA(Hons) Business & Management. In my degree programme I explored how businesses are created and grow. Understand organisational behaviour, management structures, supply chains, accounting and finance and how to manage innovation and new technologies within a business.
+                 </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Camden Council</h3>
+                  <p class="info">Concessionary Travel Case Officer <span>&bull;</span> <em class="date">July 2007 - Present</em></p>
+                  <ul class="ul">
+                     <ul>
+                         <li>Comprehensive understanding of travel and transport concessions and associated
+                             statutory and local eligibility criteria associated with each scheme.</li>
+                         <li>Monitor, review and report on the outcomes of assessments against local and
+                             national policy and legislation.</li>
+                         <li>To deliver a sensitive, customer focused advice and support to service in relation to
+                             accessible transport and independent travel.</li>
+                         <li>To utilise a range of information and communication technologies to process
+                             confidential and medically sensitive customer information.</li>
+                         <li>Prioritise conflicting demands to meet the requirements of the service and to
+                             adhere to performance targets and Council standards.</li>
+                         <li>Team work and providing support and cover for staff absence and training.</li>
+                     
+                         </ul> 
+                 
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Westminster City Council</h3>
+                  <p class="info">Housing Officer <span>&bull;</span> <em class="date">September 2006 - June 2007</em></p>
+                  <ul class="ul">
+                     <ul>
+                         <li>Setting rents, administering their collection and developing policies to deal with
+                             and minimize arrears.</li>
+                         <li>Processing applications for housing improvements and repairs and communicating
+                             outcomes to tenants.</li>
+                         <li>Dealing with breaches of tenancy and leasehold agreements which could culminate
+                             in carrying out evictions.</li>
+                         </ul> 
+               
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>St Giles Hotel</h3>
+                  <p class="info">Night Auditor <span>&bull;</span> <em class="date">OCtober 2003- August 2006</em></p>
+                  <ul class="ul">
+                     <ul>
+                         <li>Verify and balance entries and keep records of financial transactions reported by
+                             various hotel departments during the day.</li>
+                         <li>Check the accuracy of figures, calculations, and postings pertaining to business
+                             transactions recorded by other workers.</li>
+                         <li>Manage check-in, check-out, reservations, responding to guest complaints,
+                             coordinating housekeeping requests, and handling any emergencies that may arise.</li>
+                         </ul> 
+                 
+               </div>
+
+            </div> <!-- item end -->
+
+
+                  
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href=" oluwoleokanlawon91@gmail.com"><i class="fa fa-external-link"></i></a></li>
+               <li><a href=" https://www.linkedin.com/in/oluwoleokanlawon"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/Camoo5/cloud-resume-challenge"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <a href="https://www.styleshout.com/free-templates/ceevee/"> Template by CeeVee </a>
+                
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
+
 </html>

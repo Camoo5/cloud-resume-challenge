@@ -54,6 +54,3 @@ Setting up our Cosmos DB resource - We will create our Cosmos DB account, databa
 Setting up our Azure Function - We will create our Azure Function to interact with our Cosmos DB counter data.
 
 Test locally - We will test our function locally an make sure we can view our counter data in the browser and in our website locally.
-
-
-https://github.com/madebygps/azure-resume/blob/1c63d9edcc599926b19dc3911ff9d835e9522972/README.md#L4
