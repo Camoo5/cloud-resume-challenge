@@ -2,9 +2,9 @@ name: deploy_frontend
 #Deploys when push is made from the frontend folder
 on:
     push:
-        branches: [ master ]
+    
         paths:
-         - 'frontend/**'
+        - 'frontend/**'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,7 +23,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeoo" --name "azureresumeoo" --resource-group "AzureResume-rg"
+         az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeoo" --name "azureresumeoo" --resource-group "AzureResume-rg"
 
   # Azure logout
     - name: logout
