@@ -16,20 +16,20 @@ jobs:
       - name: Azure Login
         uses: azure/actions/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds:  ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
           azcliversion: 2.30.0
           inlineScript: |
-             az storage blob upload-batch --account-name "azureresumewo" --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode key --overwrite -d '$web' -s "frontend/"
+             az storage blob upload-batch --account-name "azureresumewo" -d '$web' -s "frontend/"
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeo" --name "azureresumeoo" --resource-group "AzureResume-rg"
+            az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeoo" --name "azureresumeoo" --resource-group "AzureResume-rg"
 
       # Azure logout
       - name: logout
