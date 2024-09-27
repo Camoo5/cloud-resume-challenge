@@ -1,7 +1,12 @@
 name: deploy_frontend
 # Deploys when push is made from frontend folder
 
-on: push
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
 
 jobs:
   build:
@@ -15,6 +20,7 @@ jobs:
       - name: Upload to blob storage
         uses: azure/CLI@v1
         with:
+
           inlineScript: |
             az storage blob upload-batch --account-name "azureresumewo" -d '$web' -s "frontend/" --overwrite true
       - name: Purge CDN endpoint
