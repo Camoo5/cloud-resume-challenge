@@ -1,12 +1,7 @@
 name: deploy_frontend
 # Deploys when push is made from frontend folder
 
-on:
-  workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "frontend/**"
+on: push
 
 jobs:
   build:
