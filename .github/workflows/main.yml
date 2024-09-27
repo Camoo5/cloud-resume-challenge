@@ -1,5 +1,9 @@
 name: deploy_main
+<<<<<<< HEAD
 #Deploys when push is made from the frontend renamed main folder
+=======
+#Deploys when push is made from the frontend folder
+>>>>>>> 3a79b3ea064598d3cd6fb3dde628f800a1c4f8d6
 on:
     workflow_dispatch:
     push:
@@ -35,4 +39,8 @@ jobs:
       - name: logout
         run: |
             az logout
+<<<<<<< HEAD
         if: always()
+=======
+        if: always()
+>>>>>>> 3a79b3ea064598d3cd6fb3dde628f800a1c4f8d6
