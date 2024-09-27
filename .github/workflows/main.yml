@@ -1,11 +1,11 @@
-name: deploy_frontend
-#Deploys when push is made from the frontend folder
+name: deploy_main
+#Deploys when push is made from the frontend renamed main folder
 on:
     workflow_dispatch:
     push:
         branches: [main]
         paths:
-        - 'frontend/**'
+        - 'main/**'
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az storage blob upload-batch --account-name <azureresumewo> --auth-mode key -d '$web' -s frontend/
+            az storage blob upload-batch --account-name <azureresumewo> --auth-mode key -d '$web' -s main/
 
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
