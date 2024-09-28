@@ -14,14 +14,14 @@ jobs:
     steps:
      - uses: actions/checkout@v3
      - name: login with azure
-       uses: azure/login@v1
+       uses: azure/login@v2
      - name:  Run AZ CLI script
        uses:  azure/CLI@v1  
        with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
      - name: Upload to blob storage
-       uses: azure/CLI@v1
+       uses: azure/CLI@v2
        with:
         azcliversion: latest
         inlineScript: |
