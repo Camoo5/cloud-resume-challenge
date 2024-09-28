@@ -1,9 +1,10 @@
-name: deploy_frontend
-#Deploys when push is made from the frontend folder
+
+name: Manual trigger
+  #Deploys when push is made from the frontend folder
 
 on:
-    workflow_dispatch:
-    push:
+  workflow_dispatch:
+  push:
         branches: [ main ]
         paths:
             - "frontend/**"
@@ -19,13 +20,13 @@ jobs:
     - name: Upload to blob storage
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.30.0
+        azcliversion: 2.64.0
         inlineScript: |
             az storage blob upload-batch --account-name azureresumewo--auth-mode key -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
       with:
-        azcliversion: 2.30.0
+        azcliversion: 2.64.0
         inlineScript: |
           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeoo" --name "azureresumeoo" --resource-group "AzureResume-rg"
 
