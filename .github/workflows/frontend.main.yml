@@ -18,8 +18,7 @@ jobs:
      - name:  Run AZ CLI script
        uses:  azure/CLI@v1  
        with:
-          creds: '{"clientId":"${{ secrets.AZURE_CLIENT_ID }}","clientSecret":"${{ secrets.AZURE_CLIENT_SECRET }}","tenantId":"${{ secrets.AZURE_TENANT_ID }}"}'
-          
+        creds: ${{ secrets.AZURE_CREDENTIALS }} 
 
      - name: Upload to blob storage
        uses: azure/CLI@v2
