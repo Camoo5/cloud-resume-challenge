@@ -31,8 +31,10 @@ jobs:
     - name: Purge CDN endpoint
       uses: azure/CLI@v2
       with:
-        azcliversion: 2.64.0
+        azcliversion: latest
         inlineScript: |
+          az account show
+          az storage -h
           az cdn endpoint purge --content-paths  "/*" --profile-name "azureresumeoo" --name "azureresumeoo" --resource-group "AzureResume-rg"
 
      # Azure logout
