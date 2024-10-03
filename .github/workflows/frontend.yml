@@ -22,7 +22,8 @@ jobs:
         
         inlineScript: |
        
-         az storage blob upload-batch -d azureresumewo -s file:///C:/Users/oluwo/OneDrive/Desktop/cloud-resume-challenge/cloud-resume/frontend/index.html
+        
+               docker run -it -v /C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge:/root mcr.microsoft.com/azure-cli:latest 
 
     - name: Purge CDN endpoint
       uses: azure/CLI@v2
