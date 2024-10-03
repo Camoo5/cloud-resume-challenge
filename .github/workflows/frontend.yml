@@ -16,13 +16,11 @@ jobs:
     - uses: azure/login@v2
       with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
     - name: Upload to blob storage
       uses: azure/CLI@v2
       with:
         azcliversion: latest
         inlineScript: |
-           
           az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode --overwrite -d '$web' -s frontend/
            
     - name: Purge CDN endpoint
