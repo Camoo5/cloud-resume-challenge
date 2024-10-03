@@ -21,7 +21,7 @@ jobs:
       with:
         
         inlineScript: |
-          az storage blob upload-batch -d azureresumewo -s https://azureresumewo.blob.core.windows.net/$web
+          az storage blob upload-batch --account-name azureresumewo -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/CLI@v2
       with:
