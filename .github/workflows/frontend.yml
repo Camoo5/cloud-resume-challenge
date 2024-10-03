@@ -13,18 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: azure/login@v1
+    - uses: azure/login@v2
       with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Upload to blob storage
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         azcliversion: latest
         inlineScript: |
-            az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode --overwrite -d '$web' -s frontend/
+           
+           az storage blob upload-batch -d mycontainer -s https://azureresumewo.blob.core.windows.net/$web
+           
     - name: Purge CDN endpoint
-      uses: azure/CLI@v1
+      uses: azure/CLI@v2
       with:
         azcliversion: latest
         inlineScript: |
