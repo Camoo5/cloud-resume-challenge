@@ -25,7 +25,7 @@ jobs:
        
         
            
-           az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode key --overwrite -d '$web' -s frontend/
+           az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} -d '$web' -s frontend/ --overwrite true
     - name: Purge CDN endpoint
       uses: azure/CLI@v2
       with:
