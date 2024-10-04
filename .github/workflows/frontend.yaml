@@ -1,31 +1,31 @@
 
 
-name: Deploy static website
+name: deploy_frontend
   #Deploys when push is made from the frontend folder
 
 on:
-  workflow_dispatch:
-  push:
-        branches: [ main ]
-        paths:
-            - "frontend/**"
+    push:
+        branches: 
+            - main
+    workflow_dispatch:
+    
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v4
     - uses: azure/login@v2
       with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
+         
     - name: Upload to blob storage
       uses: azure/CLI@v2
       with:
         
         inlineScript: |
-       
-        
-           
-           az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode key --overwrite -d '$web' -s .
+            az storage blob upload-batch --account-name azureresumewo --account-key ${{ secrets.AZURE_STORAGE_KEY }} --auth-mode key --overwrite -d '$web' -s frontend/ --overwrite true
+   
     - name: Purge CDN endpoint
       uses: azure/CLI@v2
       with:
