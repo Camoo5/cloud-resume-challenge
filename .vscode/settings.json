@@ -1,13 +1,7 @@
 {
-    "azureFunctions.deploySubpath": "cloud-resume\\backend\\api/bin/Release/net8.0/publish",
+    "azureFunctions.deploySubpath": "api\\api/bin/Release/net8.0/publish",
     "azureFunctions.projectLanguage": "C#",
     "azureFunctions.projectRuntime": "~4",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.preDeployTask": "publish (functions)",
-    "azureFunctions.projectSubpath": "cloud-resume\\backend\\api",
-    "cSpell.words": [
-        "consoleloggerparameters",
-        "Partitionkey",
-        "resumecloud"
-    ]
+    "azureFunctions.preDeployTask": "publish (functions)"
 }

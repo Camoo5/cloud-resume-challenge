@@ -12,7 +12,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/cloud-resume\\backend\\api"
+				"cwd": "${workspaceFolder}/api\\api"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/cloud-resume\\backend\\api"
+				"cwd": "${workspaceFolder}/api\\api"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			"type": "process",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/cloud-resume\\backend\\api"
+				"cwd": "${workspaceFolder}/api\\api"
 			}
 		},
 		{
@@ -64,14 +64,14 @@
 			"dependsOn": "clean release (functions)",
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/cloud-resume\\backend\\api"
+				"cwd": "${workspaceFolder}/api\\api"
 			}
 		},
 		{
 			"type": "func",
 			"dependsOn": "build (functions)",
 			"options": {
-				"cwd": "${workspaceFolder}/cloud-resume\\backend\\api/bin/Debug/net8.0"
+				"cwd": "${workspaceFolder}/api\\api/bin/Debug/net8.0"
 			},
 			"command": "host start",
 			"isBackground": true,
