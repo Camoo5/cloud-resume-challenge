@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPO="Camoo5/cloud-resume-challenge"
-STATUS="inactive" # or any other status you want to filter by
+STATUS="main" # or any other status you want to filter by
 
 # Get deployments with the specified status
 DEPLOYMENTS=$(gh api -H "Accept: application/vnd.github+json" -X GET "/repos/$REPO/deployments" | jq -r --arg status "$STATUS" '.[] | select(.status == $status) | .id')
