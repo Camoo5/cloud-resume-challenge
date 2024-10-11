@@ -13,5 +13,5 @@ echo "Deployments to delete: $DEPLOYMENTS"
 # Loop through each deployment ID and delete it
 for DEPLOYMENT_ID in $DEPLOYMENTS; do
   echo "Deleting deployment $DEPLOYMENT_ID"
-  gh api --method DELETE -H "Accept: application/vnd.github+json" "/repos/$REPO/deployments/$DEPLOYMENT_ID"
+  gh api --method DELETE -H "Accept: application/vnd.github+json" "repos/$REPO/deployments/$DEPLOYMENT_ID"
 done
