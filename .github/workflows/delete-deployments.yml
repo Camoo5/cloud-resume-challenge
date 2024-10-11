@@ -1,0 +1,25 @@
+name: Delete Deployments
+
+on:
+  workflow_dispatch: # Manually trigger the workflow
+
+jobs:
+  delete_deployments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get Deployments
+        id: get-deployments
+        run: |
+          deployments=$(gh api -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/deployments | jq '.[].id')
+          echo "::set-output name=deployments::$deployments"
+
+      - name: Delete Deployments
+        if: steps.get-deployments.outputs.deployments != ""
+        run: |
+          for deployment_id in ${{ steps.get-deployments.outputs.deployments }}; do
+            echo "Deleting deployment $deployment_id"
+            gh api -X DELETE -H "Accept: application/vnd.github+json" /repos/${{ github.repository }}/deployments/$deployment_id
+          done
