@@ -1,0 +1,6 @@
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.csproj.AssemblyReference.cache
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.AssemblyInfoInputs.cache
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.AssemblyInfo.cs
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.csproj.CoreCompileInputs.cache
+C:\Users\oluwo\OneDrive\Desktop\cloud-resume-challenge\cloud-resume\backend\obj\Debug\net8.0\tests.sourcelink.json
